@@ -7,5 +7,6 @@
     <Description>Not Available</Description>
     <AssemblyName>Penguin.Templating.Abstractions</AssemblyName>
     <RootNamespace>Penguin.Templating.Abstractions</RootNamespace>
+    <DocumentationFile>Penguin.Templating.Abstractions.xml</DocumentationFile>
   </PropertyGroup>
 </Project>
