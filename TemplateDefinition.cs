@@ -8,7 +8,7 @@ namespace Penguin.Templating.Abstractions
     {
         public List<ITemplateProperty> Children { get; } = new List<ITemplateProperty>();
 
-        IEnumerable<ITemplateProperty> ITemplateDefinition.Children => Children;
+        IEnumerable<ITemplateProperty> ITemplateDefinition.Children => this.Children;
 
         public string DisplayName { get; set; }
 
@@ -18,9 +18,9 @@ namespace Penguin.Templating.Abstractions
 
         public TemplateDefinition(string displayName, Type handler, object target)
         {
-            DisplayName = displayName;
-            Handler = handler;
-            Target = target.ToString();
+            this.DisplayName = displayName;
+            this.Handler = handler;
+            this.Target = target.ToString();
         }
 
         public TemplateDefinition(string displayName, Type handler) : this(displayName, handler, displayName)

@@ -34,9 +34,9 @@ namespace Penguin.Templating.Abstractions
         /// </param>
         public TemplateParameter(Type type, string name, object value)
         {
-            Type = type;
-            Name = name;
-            Value = value;
+            this.Type = type;
+            this.Name = name;
+            this.Value = value;
         }
     }
 }
