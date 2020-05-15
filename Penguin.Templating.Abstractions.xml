@@ -56,5 +56,21 @@
             newly generated (unless cached) template
             </param>
         </member>
+        <member name="P:Penguin.Templating.Abstractions.TemplateProperty.Children">
+            <summary>
+            A collection of child properties
+            </summary>
+        </member>
+        <member name="M:Penguin.Templating.Abstractions.TemplateProperty.AddChild(Penguin.Templating.Abstractions.Interfaces.ITemplateProperty)">
+            <summary>
+            Adds a child template property
+            </summary>
+            <param name="toAdd">The child to add</param>
+        </member>
+        <member name="P:Penguin.Templating.Abstractions.TemplateProperty.DisplayName">
+            <summary>
+            The name to display in any editor used to alter this object
+            </summary>
+        </member>
     </members>
 </doc>
