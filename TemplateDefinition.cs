@@ -18,6 +18,11 @@ namespace Penguin.Templating.Abstractions
 
         public TemplateDefinition(string displayName, Type handler, object target)
         {
+            if (target is null)
+            {
+                throw new ArgumentNullException(nameof(target));
+            }
+
             this.DisplayName = displayName;
             this.Handler = handler;
             this.Target = target.ToString();
