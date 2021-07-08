@@ -19,7 +19,6 @@ namespace Penguin.Templating.Abstractions
             this.Children.Add(toAdd);
         }
 
-
         IEnumerable<ITemplateProperty> ITemplateProperty.Children => this.Children;
         /// <summary>
         /// The name to display in any editor used to alter this object
