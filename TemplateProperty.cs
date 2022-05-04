@@ -14,7 +14,10 @@ namespace Penguin.Templating.Abstractions
         /// Adds a child template property
         /// </summary>
         /// <param name="toAdd">The child to add</param>
-        public void AddChild(ITemplateProperty toAdd) => this.Children.Add(toAdd);
+        public void AddChild(ITemplateProperty toAdd)
+        {
+            this.Children.Add(toAdd);
+        }
 
         IEnumerable<ITemplateProperty> ITemplateProperty.Children => this.Children;
         /// <summary>
