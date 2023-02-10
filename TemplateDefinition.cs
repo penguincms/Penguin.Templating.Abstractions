@@ -6,7 +6,7 @@ namespace Penguin.Templating.Abstractions
 {
     public class TemplateDefinition : ITemplateDefinition
     {
-        public List<ITemplateProperty> Children { get; } = new List<ITemplateProperty>();
+        public IList<ITemplateProperty> Children { get; } = new List<ITemplateProperty>();
 
         IEnumerable<ITemplateProperty> ITemplateDefinition.Children => Children;
 

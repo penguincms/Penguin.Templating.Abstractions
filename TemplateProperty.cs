@@ -8,7 +8,7 @@ namespace Penguin.Templating.Abstractions
         /// <summary>
         /// A collection of child properties
         /// </summary>
-        public List<ITemplateProperty> Children { get; } = new List<ITemplateProperty>();
+        public IList<ITemplateProperty> Children { get; } = new List<ITemplateProperty>();
 
         /// <summary>
         /// Adds a child template property

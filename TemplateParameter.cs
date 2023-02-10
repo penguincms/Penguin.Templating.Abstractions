@@ -38,31 +38,36 @@ namespace Penguin.Templating.Abstractions
             Name = name;
             Value = value;
         }
+
         /// <inheritdoc/>
 
         public override bool Equals(object obj)
         {
             throw new NotImplementedException();
         }
+
         /// <inheritdoc/>
 
         public override int GetHashCode()
         {
             throw new NotImplementedException();
         }
+
         /// <inheritdoc/>
 
         public static bool operator ==(TemplateParameter left, TemplateParameter right)
         {
             return left.Equals(right);
         }
+
         /// <inheritdoc/>
 
         public static bool operator !=(TemplateParameter left, TemplateParameter right)
         {
             return !(left == right);
         }
-/// <inheritdoc/>
+
+        /// <inheritdoc/>
 
         public bool Equals(TemplateParameter other)
         {
