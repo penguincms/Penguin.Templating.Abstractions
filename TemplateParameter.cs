@@ -5,7 +5,7 @@ namespace Penguin.Templating.Abstractions
     /// <summary>
     /// Contains the information required to generate the model information, parameter name, and set the value to render
     /// </summary>
-    public struct TemplateParameter
+    public struct TemplateParameter : IEquatable<TemplateParameter>
     {
         /// <summary>
         /// The name of the parameter to use when naming the model property
@@ -34,9 +34,39 @@ namespace Penguin.Templating.Abstractions
         /// </param>
         public TemplateParameter(Type type, string name, object value)
         {
-            this.Type = type;
-            this.Name = name;
-            this.Value = value;
+            Type = type;
+            Name = name;
+            Value = value;
+        }
+        /// <inheritdoc/>
+
+        public override bool Equals(object obj)
+        {
+            throw new NotImplementedException();
+        }
+        /// <inheritdoc/>
+
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
+        }
+        /// <inheritdoc/>
+
+        public static bool operator ==(TemplateParameter left, TemplateParameter right)
+        {
+            return left.Equals(right);
+        }
+        /// <inheritdoc/>
+
+        public static bool operator !=(TemplateParameter left, TemplateParameter right)
+        {
+            return !(left == right);
+        }
+/// <inheritdoc/>
+
+        public bool Equals(TemplateParameter other)
+        {
+            throw new NotImplementedException();
         }
     }
 }

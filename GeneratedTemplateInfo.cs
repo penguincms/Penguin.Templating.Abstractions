@@ -22,9 +22,9 @@
 
         public GeneratedTemplateInfo(string absolutePath, string relativePath, object model)
         {
-            this.AbsolutePath = absolutePath;
-            this.RelativePath = relativePath;
-            this.Model = model;
+            AbsolutePath = absolutePath;
+            RelativePath = relativePath;
+            Model = model;
         }
     }
 }

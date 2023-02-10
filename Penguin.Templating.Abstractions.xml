@@ -56,6 +56,21 @@
             newly generated (unless cached) template
             </param>
         </member>
+        <member name="M:Penguin.Templating.Abstractions.TemplateParameter.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Penguin.Templating.Abstractions.TemplateParameter.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Penguin.Templating.Abstractions.TemplateParameter.op_Equality(Penguin.Templating.Abstractions.TemplateParameter,Penguin.Templating.Abstractions.TemplateParameter)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Penguin.Templating.Abstractions.TemplateParameter.op_Inequality(Penguin.Templating.Abstractions.TemplateParameter,Penguin.Templating.Abstractions.TemplateParameter)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Penguin.Templating.Abstractions.TemplateParameter.Equals(Penguin.Templating.Abstractions.TemplateParameter)">
+            <inheritdoc/>
+        </member>
         <member name="P:Penguin.Templating.Abstractions.TemplateProperty.Children">
             <summary>
             A collection of child properties

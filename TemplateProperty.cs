@@ -16,10 +16,11 @@ namespace Penguin.Templating.Abstractions
         /// <param name="toAdd">The child to add</param>
         public void AddChild(ITemplateProperty toAdd)
         {
-            this.Children.Add(toAdd);
+            Children.Add(toAdd);
         }
 
-        IEnumerable<ITemplateProperty> ITemplateProperty.Children => this.Children;
+        IEnumerable<ITemplateProperty> ITemplateProperty.Children => Children;
+
         /// <summary>
         /// The name to display in any editor used to alter this object
         /// </summary>
